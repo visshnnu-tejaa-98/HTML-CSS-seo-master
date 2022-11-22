@@ -1,0 +1,126 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+/* Navbar */
+body {
+  font-family: sans-serif;
+  margin: 2rem 7rem;
+}
+.navbar-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-weight: 700;
+}
+.navbar-container > div > img {
+  height: 2.5rem;
+}
+.grow-list {
+  display: flex;
+}
+.list {
+  display: flex;
+  gap: 1.5rem;
+  list-style-type: none;
+}
+.list .list-item {
+  color: #b7b7b7;
+}
+.list .list-item:first-child {
+  color: #4d4d4d;
+}
+.button-group {
+  position: absolute;
+  right: 7rem;
+}
+.button-group .nav-button,
+.btn {
+  background-color: #5955b3;
+  color: #ffffff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.5rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+}
+
+/* bannar */
+.banner-container {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.heading-text {
+  font-size: 5.4rem;
+  color: #3c2f60;
+  margin: 0;
+}
+.heading-text span {
+  color: #5955b3;
+}
+.description {
+  max-width: 60%;
+  color: #b7b7b7;
+  font-size: 1.125rem;
+}
+.banner-container div img {
+  /* width: 800px; */
+  position: relative;
+  left: 7rem;
+  height: 70%;
+  z-index: -1;
+}
+
+/* for-responsive */
+html {
+  font-size: 1.11w !important;
+}
+@media screen and (min-width: 2401px) {
+  html {
+    font-size: 30px !important;
+  }
+}
+@media screen and (min-width: 1441px) {
+  html {
+    font-size: 16px !important;
+  }
+}
+@media screen and (min-width: 380px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+@media screen and (min-width: 350px) {
+  html {
+    font-size: 12px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .banner-container div img {
+    display: none;
+  }
+  .banner-container .heading-text {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  .banner-container .description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .banner-container:last-child {
+    text-align: center;
+  }
+}
